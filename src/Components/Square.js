@@ -1,9 +1,12 @@
-const Square = () => {
+const Square = ({ colorValue}) => {
     return (
-        <div>
-          <h2>Square</h2>  
-        </div>
+        <section
+            className='square'
+            style={{ backgroundColor: colorValue}}
+        >
+          <p>{colorValue ? colorValue : "Empty Value"}</p>
+        </section>
     )
 }
 
-<h2>Square</h2>export default Square
+export default Square
